@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Oswald&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<script>
+x = 0
+</script>
+
+<div id="title" style="text-align:center">
+<h1>CPS Counter PRO</h1>
+<p>Instructions: Click on the Counter to COUNT Your CPS!</p>
+</div id="title">
+
+<script>
+    function cpsCount() {
+        x = x + 1
+}
+</script>
+
+<div id="buttons" style="text-align:center">
+<button type="button" onclick="cpsCount()" style="text-align:center">Click Here!</button>
+
+<button type="button" onclick="document.getElementById('demo').innerHTML = 'Your CPS: ' + x;">Refresh Count!</button>
+</div id="buttons">
+
+<div id="demo" style="text-align:center; font-family: 'Roboto', sans-serif; font-size:12px">
+<h1>Your CPS: 0</h1>
+</div id="demo">
+<p style="text-align:center">Not Seeing CPS? Click REFRESH to Reload your CPS!</p>
+
+</body>
+</html>
