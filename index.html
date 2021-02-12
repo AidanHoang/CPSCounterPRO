@@ -17,11 +17,11 @@
 
 <script>
 var x, y ,z
-x = 2
+x = 0
 </script>
 
 <div id="title" style="text-align:center">
-<h1>CPS Counter PRO</h1>
+<h1>Yoshi™ CPS Counter</h1>
 <p>Instructions: Click on the Counter to COUNT Your CPS!</p>
 </div id="title">
 
@@ -29,22 +29,30 @@ x = 2
     function cpsCount() {
         x = x + 1
 }
+
+    function loopTest() {
+        document.getElementById('your').innerHTML = 'Your CPS: ' + x
+    }
+
+    function zeroCount() {
+        x = 0
+    }
 </script>
 
 <div id="buttons" style="text-align:center">
-<button type="button" onclick="cpsCount()" style="text-align:center">Click Here!</button>
+<button type="button" onclick="cpsCount(); loopTest()" style="text-align:center">Click Here!</button>
 
-<button type="button" onclick="document.getElementById('your').innerHTML = 'Your CPS: ' + x;">Refresh Count!</button>
+<button type="button" onclick="zeroCount(); document.getElementById('your').innerHTML = 'Your CPS: ' + 0">Refresh Count!</button>
 </div id="buttons">
 
 <div id="demo" style="text-align:center; font-family: 'Roboto', sans-serif; font-size:12px">
 <h1 id="your">Your CPS: 0</h1>
 </div id="demo">
-<p style="text-align:center" id="not">Not Seeing CPS? Click REFRESH to Reload your CPS!</p>
+<p style="text-align:center" id="not">Want to Reset your CPS? Click REFRESH to Reload your CPS!</p>
 
 <script>
 while (x > 0) {
-  document.getElementById('your').innerHTML = 'Your CPS: ' + x;
+  loopTest();
 }
 </script>
 
